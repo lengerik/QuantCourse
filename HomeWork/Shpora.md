@@ -17,12 +17,23 @@ git config --global user.email myEmail@example.com
 Чтобы создать новый репозиторий, нужно открыть терминал, зайти в папку проекта и выполнить команду **init**. Это включит приложение в этой конкретной папке и создаст скрытую директорию .git, где будет храниться история репозитория и настройки. Для этого в окне терминала вводим:  
 
 
->$ mkdir Desktop/git_exercise/  
-$ cd Desktop/git_exercise/  
+>$ mkdir Desktop/repository_name/  
+$ cd Desktop/repository_name/  
 $ git init  
 
 Командная строка должна вернуть:  
 
->Initialized empty Git repository in /home/user/Desktop/git_exercise/.git/  
+>Initialized empty Git repository in /home/user/Desktop/repository_name/.git/  
 
-Это значит, что наш репозиторий был успешно создан.
+Это значит, что наш репозиторий был успешно создан.  
+
+## **Определение состояния**  
+**Status** — это еще одна важнейшая команда, которая показывает информацию о текущем состоянии репозитория: актуальна ли информация на нём и так далее. Запуск git status в свежесозданном репозитории должен выдать:  
+
+>$ git status  
+On branch master  
+Initial commit  
+Untracked files:  
+(use "git add ..." to include in what will be committed)  
+hello.txt  
+
